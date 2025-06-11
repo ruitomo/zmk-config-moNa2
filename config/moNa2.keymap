@@ -19,6 +19,21 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        tabright {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        tableft {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <12 11>;
+        };
+
+        exclamationmark {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <4 3>;
+        };
     };
 
     macros {
@@ -54,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                          &kp Y             &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S         &kp D         &kp F      &kp G        &kp EXCLAMATION    &kp MINUS      &kp H             &kp J  &kp K     &kp L     &kp ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &lt 4 COMMA        &kp PERIOD     &kp N             &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 TAB  &lt 3 SPACE  &lt 4 LANG1        &kp BACKSPACE  &lt 1 LANGUAGE_2                             &kp QUESTION
+&kp Q               &kp W         &kp E             &kp R      &kp T                                           &kp Y             &kp U  &kp I     &kp O     &kp P
+&mt LEFT_COMMAND A  &kp S         &kp D             &kp F      &kp G        &trans              &kp MINUS      &kp H             &kp J  &kp K     &kp L     &kp ENTER
+&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V      &kp B        &lt 4 COMMA         &kp PERIOD     &kp N             &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&kp LCTRL           &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 2 TAB  &lt 3 SPACE  &lt 4 LANGUAGE_2    &kp BACKSPACE  &lt 1 LANGUAGE_1                             &kp QUESTION
             >;
 
             sensor-bindings =
@@ -91,10 +106,10 @@
 
         arrow_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                   &trans
+&trans  &trans     &trans     &trans         &trans                    &trans  &trans          &kp UP_ARROW    &trans           &trans
+&trans  &kp LG(C)  &kp LG(V)  &kp LG(LS(V))  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
+&trans  &trans     &trans     &trans         &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
+&trans  &trans     &trans     &trans         &trans  &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
