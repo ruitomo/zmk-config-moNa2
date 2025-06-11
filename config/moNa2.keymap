@@ -34,6 +34,11 @@
             bindings = <&kp EXCLAMATION>;
             key-positions = <4 3>;
         };
+
+        command {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <24 25>;
+        };
     };
 
     macros {
@@ -106,10 +111,10 @@
 
         arrow_layer {
             bindings = <
-&trans  &trans     &trans     &trans         &trans                    &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &kp LG(C)  &kp LG(V)  &kp LG(LS(V))  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
-&trans  &trans     &trans     &trans         &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans     &trans     &trans         &trans  &trans    &trans  &trans                                                   &trans
+&trans  &trans     &trans     &trans            &trans                    &trans  &trans          &kp UP_ARROW    &trans           &trans
+&trans  &kp LG(C)  &kp LG(V)  &kp LG(LS(V))     &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
+&trans  &trans     &trans     &kp LEFT_CONTROL  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
+&trans  &trans     &trans     &trans            &trans  &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
