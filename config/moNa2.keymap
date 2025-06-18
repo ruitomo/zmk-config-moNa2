@@ -116,10 +116,10 @@
 
         arrow_layer {
             bindings = <
-&trans  &trans         &trans                &trans            &trans                           &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &kp LG(C)      &kp LG(V)             &kp LG(LS(V))     &kp LS(LG(B))  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
-&trans  &kp LG(LA(F))  &kp LA(LEFT_COMMAND)  &kp LEFT_CONTROL  &trans         &trans    &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans         &trans                &trans            &trans         &trans    &trans  &trans                                                   &trans
+&trans     &trans         &trans                &trans            &trans                           &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LG(X)  &kp LG(C)      &kp LG(V)             &kp LG(LS(V))     &kp LS(LG(B))  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
+&trans     &kp LG(LA(F))  &kp LA(LEFT_COMMAND)  &kp LEFT_CONTROL  &trans         &trans    &trans  &trans  &trans          &trans          &trans           &trans
+&trans     &trans         &trans                &trans            &trans         &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
