@@ -116,9 +116,9 @@
 
         arrow_layer {
             bindings = <
-&trans     &trans         &trans                &trans            &trans                           &trans  &trans          &kp UP_ARROW    &trans           &trans
+&trans     &trans         &trans                &kp LG(A)         &trans                           &trans  &kp LC(U)       &kp UP_ARROW    &kp LC(W)        &trans
 &kp LG(X)  &kp LG(C)      &kp LG(V)             &kp LG(LS(V))     &kp LS(LG(B))  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(ENTER)
-&trans     &kp LG(LA(F))  &kp LA(LEFT_COMMAND)  &kp LEFT_CONTROL  &trans         &trans    &trans  &trans  &trans          &trans          &trans           &trans
+&trans     &kp LG(LA(F))  &kp LA(LEFT_COMMAND)  &kp LEFT_CONTROL  &trans         &trans    &trans  &trans  &kp LC(A)       &trans          &kp LC(E)        &trans
 &trans     &trans         &trans                &trans            &trans         &trans    &trans  &trans                                                   &trans
             >;
 
