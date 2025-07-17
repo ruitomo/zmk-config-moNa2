@@ -49,6 +49,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <8 7>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <19 18>;
+        };
     };
 
     macros {
